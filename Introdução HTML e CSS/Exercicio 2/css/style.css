@@ -8,10 +8,13 @@ main{
     display: table;
     margin: 100px auto 0 auto;
 }
+/*cards*/
 
 .card-container{
     width: 270px;
     display: table;
+    float: left;
+    margin: 60px 60px 0 0;
 }
 
 .card{
@@ -38,10 +41,64 @@ main{
     margin-top: 13px;
 }
 
+/*
+Essas duas formas de fazer a imagem subir funcionam, porém a que usa
+o position relative necessita de um ajuste pra não deixar um vazio
+
+.card .card-image-top{
+    margin-top: -55px;
+}
+
+*/
+
+.card .card-image-top{
+    position: relative;
+    top: -55px;
+    margin-bottom: -55px;
+}
+
 .card .card-body h1{
-    font-family: Arial black, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
     line-height: 24px;
     color: #9013fe;
     margin: 0;
+}
+
+.card .card-body p{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 800;
+    color: #4a4a4a;
+    margin: 15px 0 10px 0;
+}
+
+.card .card-footer{
+    width: 100%;
+    display: table;
+}
+
+.card .card-footer .btn{
+    width: 100%;
+}
+
+/*botões*/
+
+.btn{
+    width: auto;
+    height: 40px;
+    display: inline-block;
+    background-color: #39E493;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 12px;
+    padding: 0 30px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
