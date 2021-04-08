@@ -22,3 +22,13 @@ main {
     display: block;
     box-shadow: 4px 4px 8px rgba(0,0,0,.15);
 }
+
+.box{
+    width: 300px;
+    height: 200px;
+    display: block;  
+    background-color: #80e917;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
