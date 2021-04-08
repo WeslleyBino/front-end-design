@@ -13,7 +13,6 @@ header{
 
 main {
     width: 1000px;
-    height: 800px;
     background-color: white;
     border-radius: 8px;
     margin-top: 30px;
@@ -28,6 +27,7 @@ main {
     display: table;  
     margin-left: 25px;
     margin-top: 25px;
+    margin-bottom: 25px;
     float: left;
 }
 
