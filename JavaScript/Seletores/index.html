@@ -51,14 +51,18 @@
     var vermelho = document.querySelectorAll('.item-vermelho');
 
     function facaAzul() {
-      var i = 0;
-      for (i = 0; azul.length > i; i++) {
-        azul[i].style.color = "blue";
-      }
+      // var i = 0;
+      // for (i = 0; azul.length > i; i++) {
+      //   azul[i].style.color = "blue";
+      // }
+        azul.forEach((ele) => {
+          ele.style.color = "blue";
+        })
 
-      for (i = 0; vermelho.length > i; i++) {
-        vermelho[i].style.display = "none";
-      }
+      // for (i = 0; vermelho.length > i; i++) {
+      //   vermelho[i].style.display = "none";
+      // }
+        vermelho.forEach((sumir) => { sumir.style.display = "none";})
 
       document.body.style.backgroundColor = 'blue';
     }

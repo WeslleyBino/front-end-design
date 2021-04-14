@@ -10,7 +10,8 @@
     margin: 60px auto;
     background-color: #8a00cf;
     border-radius: 8px;  
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 .my-item {
